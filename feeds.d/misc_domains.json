@@ -1,0 +1,16 @@
+{
+  "feeds":
+  [
+    {
+      "feed_name": "Dshield Suspicious domains",
+      "feed_type": "txt",
+      "indicator_type": "domain",
+      "feed_url": "https://isc.sans.edu/feeds/suspiciousdomains_High.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "es_endpoint": "${elasticsearch_domain_endpoint}",
+  "intel_index": "dummy_index_is_deprecated",
+  "region": "us-east-1",
+  "ingest_lambda_name": "${ingest_intel_lambda_name}"
+
+}

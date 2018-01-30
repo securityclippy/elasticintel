@@ -1,0 +1,36 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "indicator_type.keyword": {
+              "value":  "ipaddress"
+            }
+          }
+        },
+        {
+          "term": {
+            "whois.keyword": {
+              "value": "not found"
+            }
+          }
+        },
+        {
+          "range": {
+            "indexed_at": {
+              "gte": "now-1w"
+            }
+          }
+        },
+        {
+          "range": {
+            "whois": {
+              "lte": "now"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

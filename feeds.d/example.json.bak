@@ -1,0 +1,159 @@
+{
+  "feeds":
+  [
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    },
+    {
+      "feed_name": "",
+      "feed_type": "txt",
+      "indicator_type": "",
+      "feed_url": "",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [24]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+      "feed_name": "Blocklist.de all",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/all.txt",
+      "check_interval": [8]
+    }

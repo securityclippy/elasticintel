@@ -1,0 +1,40 @@
+{
+  "feeds":
+  [
+    {
+      "feed_name": "CI army badguys",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://www.ciarmy.com/list/ci-badguys.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "packetmail iprep",
+      "feed_type": "csv",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://cybersweat.shop/iprep/iprep.txt",
+      "field_mapping": {
+        "separator": ";",
+        "source": ["ipaddress", "lastseen", "context", "history"],
+        "destination": ["ipaddress", "last_seen", "description", "history"],
+        "has_headers": false
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "talos ip blacklist",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://talosintelligence.com/documents/ip-blacklist",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+    },
+      "check_interval": [8]
+    }
+  ]
+}

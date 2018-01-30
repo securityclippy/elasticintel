@@ -1,0 +1,15 @@
+{
+  "feeds": [
+    {
+      "feed_name": "uceprotect level 1",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://wget-mirrors.uceprotect.net/rbldnsd-all/dnsbl-1.uceprotect.net.gz",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    }
+  ]
+}

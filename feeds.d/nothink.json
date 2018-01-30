@@ -1,0 +1,37 @@
+{
+  "feeds": [
+        {
+      "feed_name": "Nothing.org irc malware",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://www.nothink.org/blacklist/blacklist_malware_irc.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Nothing.org http malware",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://www.nothink.org/blacklist/blacklist_malware_http.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Nothink.org ssh blacklist (daily)",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://www.nothink.org/blacklist/blacklist_ssh_day.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    }
+  ]
+}

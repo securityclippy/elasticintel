@@ -1,0 +1,28 @@
+{
+  "feeds": [
+     {
+      "feed_name": "Open Phish",
+      "feed_type": "txt",
+      "indicator_type": "url",
+      "feed_url": "https://openphish.com/feed.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Phish Tank",
+      "feed_type": "csv",
+      "indicator_type": "url",
+      "feed_url": "http://data.phishtank.com/data/online-valid.csv",
+      "field_mapping": {
+        "separator": ",",
+        "source": ["phish_id", "url", "phish_detail_url", "submission_time", "verified", "verification_time", "online", "target"],
+        "destination": ["phish_id", "url", "phish_detail_url", "submission_timestamp", "verified", "verification_time", "online", "target"],
+        "has_headers": false
+      },
+      "check_interval": [8]
+    }
+  ]
+}

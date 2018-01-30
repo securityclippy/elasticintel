@@ -1,0 +1,19 @@
+{
+  "token": "test_token",
+  "team_id": "T83M0G997",
+  "api_app_id": "A82JWEFD0",
+  "event": {
+    "type": "message",
+    "user": "U82JQALCQ",
+    "text": "<@U83M9A5CP> derp2",
+    "ts": "1511737775.000019",
+    "channel": "G84JL8C59",
+    "event_ts": "1511737775.000019"
+  },
+  "type": "event_callback",
+  "event_id": "Ev81GZV9D1",
+  "event_time": 1511737775,
+  "authed_users": [
+    "U89M7N1CF"
+  ]
+}

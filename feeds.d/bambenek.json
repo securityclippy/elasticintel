@@ -1,0 +1,30 @@
+{
+  "feeds": [
+        {
+      "feed_name": "Bambenek C2 IP Master High Confidence",
+      "feed_type": "csv",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://osint.bambenekconsulting.com/feeds/c2-ipmasterlist-high.txt",
+      "field_mapping": {
+        "separator": ",",
+        "source": ["ipaddress", "description", "created", "source_url"],
+        "destination": ["ipaddress", "description", "created", "source_url"],
+        "has_headers": false
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Bambenek C2 Domain Master List",
+      "feed_type": "csv",
+      "indicator_type": "domain",
+      "feed_url": "http://osint.bambenekconsulting.com/feeds/c2-dommasterlist-high.txt",
+      "field_mapping": {
+        "separator": ",",
+        "source": ["domain", "description", "created", "source_url"],
+        "destination": ["domain", "description", "created", "source_url"],
+        "has_headers": false
+      },
+      "check_interval": [8]
+    }
+  ]
+}

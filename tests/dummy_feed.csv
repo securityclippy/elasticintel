@@ -1,0 +1,121 @@
+#############################################################
+## Master Feed of known, active and non-sinkholed C&Cs IP 
+## addresses
+## 
+## HIGH-CONFIDENCE FAMILIES ONLY
+## 
+## Feed generated at: 2017-10-30 05:15 
+##
+## Feed Provided By: John Bambenek of Bambenek Consulting
+## jcb@bambenekconsulting.com // http://bambenekconsulting.com
+## Use of this feed is governed by the license here: 
+## http://osint.bambenekconsulting.com/license.txt 
+##
+## For more information on this feed go to: 
+## http://osint.bambenekconsulting.com/manual/c2-ipmasterlist.txt
+## 
+## All times are in UTC
+#############################################################
+69.64.147.10,IP used by shiotob/urlzone/bebloh C&C,2017-10-30 05:02,http://osint.bambenekconsulting.com/manual/bebloh.txt
+212.227.20.164,IP used by shiotob/urlzone/bebloh C&C,2017-10-30 05:02,http://osint.bambenekconsulting.com/manual/bebloh.txt
+204.11.56.48,IP used by beebone C&C,2017-10-30 05:11,http://osint.bambenekconsulting.com/manual/beebone.txt
+208.91.197.66,IP used by beebone C&C,2017-10-30 05:11,http://osint.bambenekconsulting.com/manual/beebone.txt
+69.64.147.10,IP used by dircrypt C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/dircrypt.txt
+69.64.147.10,IP used by fobber C&C,2017-10-30 05:11,http://osint.bambenekconsulting.com/manual/fobber.txt
+69.64.147.10,IP used by hesperbot C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/hesperbot.txt
+45.33.9.234,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+64.21.149.167,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+66.29.58.119,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+67.227.226.240,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+67.59.157.51,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+69.41.162.77,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+69.64.147.10,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+75.5.255.185,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+103.224.212.222,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+143.215.15.199,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+149.202.120.39,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+183.111.169.122,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+199.115.116.216,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+207.10.232.16,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+207.10.232.21,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+207.244.67.218,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+209.160.65.66,IP used by kraken C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/kraken.txt
+171.82.55.227,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+249.104.120.155,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+251.0.49.255,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+251.144.28.156,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+251.168.237.58,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+253.136.223.57,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+253.224.19.249,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+253.8.105.253,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+254.136.43.31,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+254.48.30.58,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+254.56.249.158,IP used by necurs C&C,2017-10-30 05:07,http://osint.bambenekconsulting.com/manual/necurs.txt
+40.255.0.62,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+66.147.244.87,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+69.64.147.10,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+182.254.245.178,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+185.26.230.129,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+191.5.59.60,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+212.53.89.138,IP used by pykspa C&C,2017-10-30 05:09,http://osint.bambenekconsulting.com/manual/pykspa.txt
+52.28.249.128,IP used by ramdo C&C,2017-10-30 05:13,http://osint.bambenekconsulting.com/manual/ramdo.txt
+34.194.213.50,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+34.197.76.50,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+34.225.182.233,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.141,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.143,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.144,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.145,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.148,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.149,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.150,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.151,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.152,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.153,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.154,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.155,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.220.201,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.221.136,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.229.164,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.229.165,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.229.166,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.229.167,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.193,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.194,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.195,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.196,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.197,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.198,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.199,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.200,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+46.165.254.201,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+52.9.172.230,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+69.64.147.10,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+89.223.109.60,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+95.215.108.16,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+173.230.158.166,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+173.239.5.6,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+173.239.8.164,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+176.53.118.145,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+194.58.56.228,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+194.58.56.242,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+213.247.47.190,IP used by ramnit C&C,2017-10-30 05:03,http://osint.bambenekconsulting.com/manual/ramnit.txt
+52.4.209.250,IP used by tinba C&C,2017-10-30 05:01,http://osint.bambenekconsulting.com/manual/tinba.txt
+69.64.147.10,IP used by tinba C&C,2017-10-30 05:01,http://osint.bambenekconsulting.com/manual/tinba.txt
+195.54.162.187,IP used by tinba C&C,2017-10-30 05:01,http://osint.bambenekconsulting.com/manual/tinba.txt
+45.33.9.234,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+46.16.61.114,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+52.55.128.40,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+52.71.185.125,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+52.73.71.92,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+69.64.147.10,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+89.31.143.1,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+91.217.90.128,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+91.221.37.6,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+93.89.232.78,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+150.129.40.215,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+173.239.23.228,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+178.32.13.222,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+209.99.40.222,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+209.99.40.223,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt
+217.12.199.54,IP used by vawtrak C&C,2017-10-30 05:14,http://osint.bambenekconsulting.com/manual/vawtrak.txt

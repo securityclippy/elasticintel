@@ -1,0 +1,2 @@
+variable "profile" {}
+variable "region" {}

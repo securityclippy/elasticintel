@@ -1,0 +1,16 @@
+{
+  "feeds":
+  [
+    {
+      "feed_name": "Cybercrime Tracker all",
+      "feed_type": "txt",
+      "indicator_type": "url",
+      "feed_url": "http://cybercrime-tracker.net/all.php",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    }
+  ]
+}

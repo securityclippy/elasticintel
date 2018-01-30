@@ -1,0 +1,13 @@
+aws_requests_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_requests_auth/aws_auth.py,sha256=1ekdZz4A6VKDClBinvrIlrpUiJM6RVh7cOWfiHp3tTA,8012
+aws_requests_auth/boto_utils.py,sha256=7Ebrh_V2sfoYTcWHPVUz5lmeiJ8eNnYIqCiKk0dwVe0,907
+aws_requests_auth-0.3.3.dist-info/DESCRIPTION.rst,sha256=SpOkfFlW_zLzIUs8ELJ9r0o1XnG1B64xiNDgMwikH4c,96
+aws_requests_auth-0.3.3.dist-info/METADATA,sha256=32YSAAyH5GJbpeTwx5TihAwhRtY83EFJ7GZx0_01M5w,567
+aws_requests_auth-0.3.3.dist-info/RECORD,,
+aws_requests_auth-0.3.3.dist-info/WHEEL,sha256=AXucK5-TNISW1dQAdsyH02xCRCCE1VKjhXIOWMW_lxI,93
+aws_requests_auth-0.3.3.dist-info/metadata.json,sha256=8ICOxaK4KUyR9BXUX1lYF92Zb_Z7hm2KLku40SII4jM,661
+aws_requests_auth-0.3.3.dist-info/top_level.txt,sha256=RjXfxP-5ABIpOaiyfKuspwlemZ4xapmhQYclhO41QbY,18
+aws_requests_auth-0.3.3.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+aws_requests_auth/__pycache__/boto_utils.cpython-35.pyc,,
+aws_requests_auth/__pycache__/__init__.cpython-35.pyc,,
+aws_requests_auth/__pycache__/aws_auth.cpython-35.pyc,,

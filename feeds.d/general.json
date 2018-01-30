@@ -1,0 +1,98 @@
+{
+  "feeds": [
+    {
+      "feed_name": "Binary Defense Banlist",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://www.binarydefense.com/banlist.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Malc0de IP blacklist",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://malc0de.com/bl/IP_Blacklist.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Emerging Threats Compromised IPs",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://rules.emergingthreats.net/blockrules/compromised-ips.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "BlutMagie Tor Exit Nodes",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://torstatus.blutmagie.de/ip_list_exit.php/Tor_ip_list_EXIT.csv",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blutmagie All Tor Nodes",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://torstatus.blutmagie.de/ip_list_exit.php/Tor_ip_list_EXIT.csv",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Dan.me.uk Tor List",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://www.dan.me.uk/torlist/",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Multiproxy.org Proxy list",
+      "feed_type": "txt",
+      "indicator_type": "proxy",
+      "feed_url": "http://multiproxy.org/txt_all/proxy.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Abuse.ch Plaintext SSL",
+      "feed_type": "csv",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://sslbl.abuse.ch/blacklist/sslipblacklist.csv",
+      "field_mapping": {
+        "separator": ",",
+        "source": [
+          "ipaddress", "dst_port", "description"
+        ],
+        "destination": [
+          "ipaddress", "dst_port", "description"
+        ],
+        "has_headers": false
+      },
+      "check_interval": [8]
+    }
+  ]
+}

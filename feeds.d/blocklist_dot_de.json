@@ -1,0 +1,126 @@
+{
+  "feeds":
+  [
+    {
+      "feed_name": "Blocklist.de all",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/all.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de apache",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/apache.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de bots",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/bots.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de bruteforce",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/bruteforcelogin.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de ftp",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/ftp.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de imap",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/imap.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de ircbot",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/ircbot.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de mail",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/mail.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de sip",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/sip.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de ssh",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/ssh.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Blocklist.de strongips",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "http://lists.blocklist.de/lists/strongips.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    }
+  ]
+}

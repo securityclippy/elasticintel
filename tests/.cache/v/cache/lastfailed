@@ -1,0 +1,6 @@
+{
+  "test_feeds.py::test_feed_has_url_key": true,
+  "test_feeds.py::test_feed_url_is_not_none": true,
+  "test_feeds.py::test_feeds": true,
+  "test_ioc_parser.py::test_clean_txt_feed": true
+}

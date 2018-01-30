@@ -1,0 +1,38 @@
+{
+  "feeds":
+  [
+    {
+      "feed_name": "Abuse.ch ransomware domain blacklist",
+      "feed_type": "txt",
+      "indicator_type": "domain",
+      "feed_url": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Abuse.ch ransomware url blacklist",
+      "feed_type": "txt",
+      "indicator_type": "url",
+      "feed_url": "https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    },
+    {
+      "feed_name": "Abuse.ch ransomware ip blacklist",
+      "feed_type": "txt",
+      "indicator_type": "ipaddress",
+      "feed_url": "https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt",
+      "field_mapping": {
+        "source": [],
+        "destination": []
+      },
+      "check_interval": [8]
+    }
+  ]
+}
