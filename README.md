@@ -3,7 +3,7 @@
 Serverless, low cost, threat intel aggregation for enterprise or personal use, backed by ElasticSearch.  
 
 
-##About 
+## About
 An alternative to expensive threat intel aggregation platforms which ingest the same data feeds you could get for free.
 
 ElasticIntel is designed to provide a central, scalable and easily queryable repository for
@@ -30,7 +30,7 @@ soon if you're not ready to jump in blind :)**
 * Works "out of the box" - comes pre-configured with 30+ opensource intel feeds
 
 
-###Why ElasticIntel
+### Why ElasticIntel
 
 ElasticIntel is the answer to a frustration which arose when evaluating various paid threat intel products and feeds.
 After reviewing the data from several of these services, I found that 90% of the data they were returning was data
@@ -40,13 +40,13 @@ Even more frustrating, was the fact that nearly all of them wanted to charge ins
 which was limited by volume and made it nearly impossible to query the data in any significant volume without
 paying even more.
 
-### Enrichments
+### Enrichment
 
 * Whois enrichment
-* Shodan
+* < more to come >
 
 
-##Architecture
+## Architecture
 
 1. Feed Scheduler lambda - The feed scheduler lambda runs once an hour, just like a cron job.  It downloads
 the configurations for all feeds, checks their scheduled download times and puts a download job
@@ -70,7 +70,7 @@ any feeds need to be pulled in
   * If a feed is determined to need refreshing, the scheduler lambda launches a new lambda
 to pull down that feed
 
-###feed ingestion
+### Feed ingestion
 
 feeds are ingested through the ingestfeed lambda function.
 this function is passed a event containing a feed dictionary, as well as the ES index where the indicators
@@ -81,7 +81,7 @@ an s3 bucket as a timestamped file, parses that
 data into intel objects and finally indexes the feed data in teh specified ES index
 
 
-###Elasticsearch
+### Elasticsearch
 
 It is important to note that intel is not unique.  Each feed is queried daily and some intel
 may appear in a feed across multiple days.  This is by designed, to allow a history view of indicators.
@@ -106,7 +106,6 @@ if pip3 fails on crypto install, make sure libssl-dev is installed (sudo apt ins
 data, piping or copying data to splunk may yield more maleable data.
 
 * Queries are best written in the developer tools section of kibana
-* 
 
 ## Recommended Reading:
 Aws elasticsearch service: http://docs.aws.amazon.com/elasticsearch-service/latest
