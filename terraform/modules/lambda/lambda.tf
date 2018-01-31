@@ -251,7 +251,7 @@ resource "aws_lambda_permission" "allow_cloudwatch_to_call_feed_scheduler" {
 
 
 ### IOC Search Lambda
-
+/*
 data "aws_iam_policy_document" "iocs_search_iam_policy_document" {
   statement {
     sid = "1"
@@ -320,3 +320,4 @@ resource "aws_lambda_function" "iocsearch_lambda" {
   }
   depends_on = ["data.archive_file.ioc_search_zip"]
 }
+*/
