@@ -9,4 +9,5 @@ module "lambda" {
   feed_scheduler_lambda_source_dir = "../../feed_scheduler_lambda"
   region = "${var.region}"
   aws_profile = "${var.aws_profile}"
+  backend_bucket = "${var.backend_bucket_name}"
 }
