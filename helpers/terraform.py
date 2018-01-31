@@ -260,13 +260,22 @@ class TerraformHelper(object):
                                "{}.conf".format(self.environment)), "r") as infile:
             data = json.load(infile)
         profile = data['aws_profile']
+        bucket = data['backed_bucket_name']
+        prefix = data['prefix']
         #with ThreadPoolExecutor(max_workers=5) as executor:
         for region in region_list:
             LOGGER.info(whois_dir)
             self.make_whois_lambda_dirs(region)
             self.init_whois_lambda(region, whois_dir, profile)
             os.chdir(region)
-            LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve", "-var", "region={}".format(region)]))
+            LOGGER.info(subprocess.check_call(["terraform",
+                                                "apply",
+                                                "-auto-approve",
+                                                "-var", "region={}".format(region),
+                                                "-var", "aws_profile={}".format(profile),
+                                                "-var", "backend_bucket_name={}".format(bucket),
+                                                "-var", "prefix={}".format(prefix)
+                                               ]))
             os.chdir(whois_dir)
             #result = executor.submit(subprocess.check_call, "terraform",
                 #LOGGER.info(result)
