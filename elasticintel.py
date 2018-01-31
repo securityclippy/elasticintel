@@ -101,6 +101,7 @@ def main():
     tf_helper = TerraformHelper(environment=env)
     if args.create:
         tf_helper.init_backends(env=env)
+        tf_helper.up_backend()
         if args.elastic:
             print("plan set to: {}".format(args.plan))
             tf_helper.up_elasticsearch(plan=args.plan)
