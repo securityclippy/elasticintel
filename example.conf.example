@@ -1,4 +1,5 @@
 {
+  "prefix": "",
   "aws_profile": "",
   "region": "us-east-1",
   "s3_bucket_name": "",
