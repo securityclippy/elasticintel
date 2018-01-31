@@ -1,3 +1,3 @@
 #variable "region" {}
-#variable "aws_profile" {}
-variable "prefix" {}
+variable "aws_profile" {}
+#variable "prefix" {}
