@@ -30,7 +30,7 @@ data "archive_file" "whois_lambda" {
 }
 
 resource "aws_lambda_function" "whois_lambda" {
-  function_name = "${var.region}-whois_lambda"
+  function_name = "${var.prefix}-${var.region}-whois_lambda"
   handler = "lambda_function.handler"
   #role = "${data.aws_iam_role.lambda_iam_role.arn}"
   role = "${data.terraform_remote_state.lambda.ingest_intel_iam_role}"
@@ -47,7 +47,7 @@ resource "aws_lambda_function" "whois_lambda" {
 }
 
 resource "aws_cloudwatch_event_rule" "every_3_minutes" {
-  name = "${var.region}_every_3_minutes"
+  name = "${var.prefix}-${var.region}_every_3_minutes"
   description = "run every 3 minutes"
   schedule_expression = "rate(3 minutes)"
 }

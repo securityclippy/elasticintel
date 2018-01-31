@@ -231,15 +231,19 @@ class TerraformHelper(object):
     def init_whois_lambda(self, region, parent_dir, profile):
         region_dir  = os.path.join(parent_dir, region)
         os.chdir(region_dir)
+        with open("{}.conf".format(self.environment), "r") as infile:
+            config = json.load(infile)
         LOGGER.info(subprocess.check_call(["terraform",
                                            "init",
                                            #"-var", "profile={}".format(profile),
                                            #"-var","region={}".format(region),
                                            #"-auto-approve",
-                                           '-backend-config=bucket={}'.format("my-test-backend-bucket"),
+                                           '-var-file={}'.format(self.config_file),
+                                           '-backend-config=bucket={}'.format(config['backend_bucket_name']),
                                            '-backend-config=profile={}'.format(profile),
                                            '-backend-config=key={}/whois_lambda/{}/terraform.tfstate'.format(self.environment, region),
                                            '-backend-config=region={}'.format("us-east-1"),
+                                           '-backend-config=encrypt=true'
                                            ]))
         os.chdir(parent_dir)
 
