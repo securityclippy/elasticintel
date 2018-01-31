@@ -7,5 +7,5 @@
   "lambda_bot_token": "",
   "lambda_bot_verification_token": "",
   "elasticsearch_domain_name": "elastic-intel",
-  "user_ip_address"
+  "user_ip_address": ""
 }
