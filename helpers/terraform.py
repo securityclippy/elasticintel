@@ -239,7 +239,7 @@ class TerraformHelper(object):
                                            '-backend-config=bucket={}'.format("my-test-backend-bucket"),
                                            '-backend-config=profile={}'.format(profile),
                                            '-backend-config=key={}/whois_lambda/{}/terraform.tfstate'.format(self.environment, region),
-                                           '-backend-config=region={}'.format("us-east-1")
+                                           '-backend-config=region={}'.format("us-east-1"),
                                            ]))
         os.chdir(parent_dir)
 
@@ -262,16 +262,7 @@ class TerraformHelper(object):
             self.make_whois_lambda_dirs(region)
             self.init_whois_lambda(region, whois_dir, profile)
             os.chdir(region)
-            LOGGER.info(subprocess.check_call(["terraform",
-                                               "apply",
-                                               "-var", "profile={}".format(profile),
-                                               "-var","region={}".format(region),
-                                               "-auto-approve",
-                                               #'-backend-config=bucket={}'.format("my-test-backend-bucket"),
-                                               #'-backend-config=profile={}'.format(profile),
-                                               #'-backend-config=key={}/whois_lambda/{}/terraform.tfstate'.format(self.environment, region),
-                                               #'-backend-config=region={}'.format(region)
-                                               ]))
+            LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve"]))
             os.chdir(whois_dir)
             #result = executor.submit(subprocess.check_call, "terraform",
                 #LOGGER.info(result)
