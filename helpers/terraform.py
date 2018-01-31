@@ -68,6 +68,15 @@ class TerraformHelper(object):
         fn = os.path.join(self.project_root, "terraform", env, "backend", "main.tf")
         self.write_backend(filename=fn, backend_bucket_name=bucket, profile_name=profile, indent="  ")
 
+    def up_backend(self):
+        LOGGER.name = "backend"
+        os.chdir(self.project_root)
+        backend_dir = os.path.join(self.terraform_root, "backend")
+        os.chdir(backend_dir)
+        self.init_teraform(backend_dir)
+        LOGGER.info(subprocess.check_call(["terraform", "get"]))
+        LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve"]))
+        return
 
     def up_elasticsearch(self, plan=False):
         LOGGER.name = "elasticsearch"
