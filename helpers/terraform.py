@@ -260,7 +260,7 @@ class TerraformHelper(object):
                                "{}.conf".format(self.environment)), "r") as infile:
             data = json.load(infile)
         profile = data['aws_profile']
-        bucket = data['backed_bucket_name']
+        bucket = data['backend_bucket_name']
         prefix = data['prefix']
         #with ThreadPoolExecutor(max_workers=5) as executor:
         for region in region_list:

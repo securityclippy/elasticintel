@@ -18,7 +18,7 @@ data "terraform_remote_state" "elasticsearch" {
   config {
     bucket = "${var.backend_bucket}"
     key    = "dev/elasticsearch/terraform.tfstate"
-    region = "${var.region}"
+    region = "us-east-1"
     profile = "${var.profile}"
   }
 }
