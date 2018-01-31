@@ -106,7 +106,7 @@ def main():
             print("plan set to: {}".format(args.plan))
             tf_helper.up_elasticsearch(plan=args.plan)
         if args.s3:
-            tf_helper.up_s3(config[args.environment]['intel_bucket_name'])
+            tf_helper.up_s3()
         if args.sns:
             tf_helper.up_sns(plan=args.plan)
         if args.aws_lambda:
@@ -117,7 +117,7 @@ def main():
             tf_helper.up_intel_bot()
         if args.all:
             tf_helper.up_elasticsearch(plan=args.plan)
-            tf_helper.up_s3(config[args.environment]['intel_bucket_name'])
+            tf_helper.up_s3()
             tf_helper.up_sns(plan=args.plan)
             tf_helper.up_lambda(plan=args.plan)
             tf_helper.up_whois_lambda()
