@@ -68,7 +68,7 @@ data "aws_iam_policy_document" "ingest_intel_lambda_assume_role_policy" {
 
 
 resource "aws_iam_role" "ingest_intel_iam_role" {
-  name = "ingest_intel_iam_role"
+  name = "${var.prefix}_ingest_intel_iam_role"
   assume_role_policy = "${data.aws_iam_policy_document.ingest_intel_lambda_assume_role_policy.json}"
 }
 
@@ -95,7 +95,7 @@ resource "aws_lambda_function" "ingest_intel_lambda" {
   depends_on = [
     "aws_s3_bucket_object.ingest_s3_zip"
   ]
-  function_name = "ingest_intel_lambda"
+  function_name = "${var.prefix}_ingest_intel_lambda"
   #filename = "../../../ingest_feed_lambda/lambda.zip"
   s3_bucket = "${data.terraform_remote_state.s3_bucket.s3_bucket_name}"
   s3_key = "ingest_feed_lambda.zip"
@@ -159,7 +159,7 @@ data "aws_iam_policy_document" "feed_scheduler_lambda_assume_role_policy_documen
 }
 
 resource "aws_iam_role" "feed_scheduler_lambda_iam_role" {
-  name = "feed_scheduler_lambda_iam_role"
+  name = "${var.prefix}_feed_scheduler_lambda_iam_role"
   assume_role_policy = "${data.aws_iam_policy_document.feed_scheduler_lambda_assume_role_policy_document.json}"
 }
 
@@ -176,13 +176,12 @@ data "archive_file" "fsl_zip" {
 }
 
 resource "aws_lambda_function" "feed_scheduler_lambda" {
-  function_name = "feed_scheduler_lambda_terraform"
+  function_name = "${var.prefix}_feed_scheduler_lambda_terraform"
   filename = "${path.root}/../../../feed_scheduler_lambda/lambda.zip"
   #filename = "${path.module}/../../../feed_scheduler_lambda.zip"
   role = "${aws_iam_role.feed_scheduler_lambda_iam_role.arn}"
   handler = "feed_scheduler_lambda.handler"
   source_code_hash = "${base64sha256(file("${path.root}/../../../feed_scheduler_lambda/lambda.zip"))}"
-  #source_code_hash = "${base64sha256(file("${path.module}../../../feed_scheduler_lambda.zip"))}"
   runtime = "python3.6"
   timeout = 300
   memory_size = 128

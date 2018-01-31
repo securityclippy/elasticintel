@@ -15,4 +15,4 @@ variable "feed_scheduler_lambda_source_dir" {}
 variable "region" {}
 variable "aws_profile" {}
 variable "backend_bucket" {}
-#variable "prefix" {}
+variable "prefix" {}
