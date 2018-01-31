@@ -231,7 +231,7 @@ class TerraformHelper(object):
     def init_whois_lambda(self, region, parent_dir, profile):
         region_dir  = os.path.join(parent_dir, region)
         os.chdir(region_dir)
-        with open("{}.conf".format(self.environment), "r") as infile:
+        with open(self.config_file, "r") as infile:
             config = json.load(infile)
         LOGGER.info(subprocess.check_call(["terraform",
                                            "init",
