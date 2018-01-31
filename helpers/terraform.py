@@ -266,7 +266,7 @@ class TerraformHelper(object):
             self.make_whois_lambda_dirs(region)
             self.init_whois_lambda(region, whois_dir, profile)
             os.chdir(region)
-            LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve"]))
+            LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve", "-var", "region={}".format(region)]))
             os.chdir(whois_dir)
             #result = executor.submit(subprocess.check_call, "terraform",
                 #LOGGER.info(result)
