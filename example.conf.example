@@ -1,9 +1,10 @@
 {
-  "prefix": "",
   "aws_profile": "",
   "region": "us-east-1",
   "s3_bucket_name": "",
+  "backend_bucket_name": "",
   "lambda_bot_name": "intelbot",
   "lambda_bot_token": "",
   "lambda_bot_verification_token": ""
 }
+~                    
