@@ -1,32 +1,33 @@
+'''
+IOC parser tests
+'''
 import pytest
 import json
 import pandas
-#from elasticintel.ingest_feed_lambda.ioc_feed_parser import IOCFeedParser
 from ingest_feed_lambda.ioc_feed_parser import IOCFeedParser
-#from ingest_feed_lambda.ioc_feed_parser import IOCFeedParser
 
 @pytest.fixture
 def txt_feed_dict():
-    with open("test_feeds/txt_feed.json", "r") as infile:
+    with open("tests/test_feeds/txt_feed.json", "r") as infile:
         feed = json.load(infile)
     return feed
 
 @pytest.fixture
 def txt_feed_data():
-    with open("test_feeds/test_txt_data.txt", "r") as infile:
+    with open("tests/test_feeds/test_txt_data.txt", "r") as infile:
         feed_data = infile.read()
     return feed_data
 
 
 @pytest.fixture
 def csv_feed_dict():
-    with open("test_feeds/csv_feed.json", "r") as infile:
+    with open("tests/test_feeds/csv_feed.json", "r") as infile:
         feed = json.load(infile)
     return feed
 
 @pytest.fixture
 def csv_test_data():
-    with open("test_feeds/test_csv_data.txt", "r") as infile:
+    with open("tests/test_feeds/test_csv_data.txt", "r") as infile:
         feed_data = infile.read()
     return feed_data
 
@@ -45,8 +46,6 @@ def test_feed_has_indicator_type():
 def test_parse_feed_type():
     txt_feed = txt_feed_dict()
     csv_veed = csv_feed_dict()
-
-
 
 def test_clean_csv_feed():
     feed = csv_feed_dict()
