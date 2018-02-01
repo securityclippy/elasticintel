@@ -1,11 +1,9 @@
-ElasticIntel
-~~~~~~~~~~~
+#ElasticIntel
 
 Serverless, low cost, threat intel aggregation for enterprise or personal use, backed by ElasticSearch.  
 
 
-About
-~~~~~
+### About
 
 An alternative to expensive threat intel aggregation platforms which ingest the same data feeds you could get for free.
 
@@ -15,8 +13,7 @@ threat intelligence of all types.
 Utilizes amazon services to allow for minimal support needs while maintaining scalability and 
 resilience and performance.  (aws lambda, elasticsearch, s3, sns)
 
-Disclaimer.
-~~~~~~~~~~~
+#### Disclaimer.
 
 **Currently documentation for this project is lacking due to time constraints.  This is actively
 being fixed and should be much more verbose in a few days.  Please check back
