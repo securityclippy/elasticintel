@@ -1,4 +1,6 @@
-#ElasticIntel
+# ElasticIntel
+
+[![Build Status](https://travis-ci.org/securityclippy/elasticintel.svg?branch=master)](https://travis-ci.org/securityclippy/elasticintel)
 
 Serverless, low cost, threat intel aggregation for enterprise or personal use, backed by ElasticSearch.  
 
