@@ -3,21 +3,21 @@ import pytest
 import os
 
 def  test_feeds_have_name():
-    for i in os.listdir("../feeds.d"):
+    for i in os.listdir("feeds.d"):
         if i.endswith(".json"):
-            with open("../feeds.d/{}".format(i), "r") as infile:
+            with open("feeds.d/{}".format(i), "r") as infile:
                 data = json.load(infile)
             for feed in data['feeds']:
                 assert len(feed['feed_name']) >= 1
 
 def test_feeds_have_type():
-    for i in os.listdir("../feeds.d"):
+    for i in os.listdir("feeds.d"):
         if i.endswith(".json"):
-            with open("../feeds.d/{}".format(i), "r") as infile:
+            with open("feeds.d/{}".format(i), "r") as infile:
                 data = json.load(infile)
             for feed in data['feeds']:
                 print(feed['feed_name'])
-                print("../feeds.d/{}".format(i))
+                print("feeds.d/{}".format(i))
                 if feed['feed_type'] == 'txt' or feed['feed_type'] == 'csv':
                     is_txt_or_csv = True
                 else:
@@ -26,9 +26,9 @@ def test_feeds_have_type():
 
 def test_csv_feeds():
     csv_feeds = []
-    for i in os.listdir("../feeds.d"):
+    for i in os.listdir("feeds.d"):
         if i.endswith(".json"):
-            with open("../feeds.d/{}".format(i), "r") as infile:
+            with open("feeds.d/{}".format(i), "r") as infile:
                 data = json.load(infile)
             for feed in data['feeds']:
                 if feed['feed_type'] == "csv":
@@ -49,9 +49,9 @@ def test_csv_feeds():
 
 def test_txt_feeds():
     txt_feeds = []
-    for i in os.listdir("../feeds.d"):
+    for i in os.listdir("feeds.d"):
         if i.endswith(".json"):
-            with open("../feeds.d/{}".format(i), "r") as infile:
+            with open("feeds.d/{}".format(i), "r") as infile:
                 data = json.load(infile)
             for feed in data['feeds']:
                 if feed['feed_type'] == "txt":
