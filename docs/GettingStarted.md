@@ -11,8 +11,21 @@ There are a few basic pre-requisites to getting started with ElasticIntel.
 Once the above requirements have been met, deployment steps should be quite simple.
 
 1. Clone the repository(note, because of the python dependencies, the clone is at least moderately sized, it may take a minute)
+    ```commandline
+    git clone https://github.com/securityclippy/elasticintel.git
+    ```
 
-2. Begin by copying the example config to `dev.conf` (this can actually be whatever you want it to be named, but for this
+2.  Set up a python virtual environment and install dependencies
+
+    ```commandline
+    virtualenv -p python3 venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+
+
+
+3. Begin by copying the example config to `dev.conf` (this can actually be whatever you want it to be named, but for this
 example we'll work with a "dev" environment
 
 
@@ -20,10 +33,10 @@ example we'll work with a "dev" environment
     cp example.conf.example dev.conf
    ```
 
-3. (optional) configure your slack bot integration by following the guide [here](slack_bot_setup.md)
+4. (optional) configure your slack bot integration by following the guide [here](slack_bot_setup.md)
 
 
-4. Fill in the values for the configuration as needed.
+5. Fill in the values for the configuration as needed.
 
     ```json
       "prefix": "",
@@ -62,18 +75,22 @@ example we'll work with a "dev" environment
 
     `user_ip_address` - The ip address or cidr block to allow access to to elasticsearch
     service from.  This is simplest method of accessing the AWS ES service.  A more advanced
-    setup is documented [here](link)
+    setup will be documented [here](link) (TODO)
 
-5. Install the python requirements
+6. Install the python requirements
     ```
     pip3 install -r requirements.txt
     ```
 
-6. Once the config is filled out, its time to deploy!  Deployment is very simpl, but does take some time.
+7. Once the config is filled out, its time to deploy!  Deployment is very simpl, but does take some time.
 Expect to let the installation run for 30 minutes or more.  This is largely due to the fact
-that the ElasticSearch Service from AWS takes about 20 minutes to provision resources.
+that the ElasticSearch Service from AWS takes about 20-30 minutes to provision resources.
 Fortunately, there should be zero user interaction required during this time, so take
 the opportunity to go make some coffee, chase a puppy, or whatever else floats your boat.
+
+    ```commandline
+    python3 elasticintel --create --all
+    ```
 
 
 
