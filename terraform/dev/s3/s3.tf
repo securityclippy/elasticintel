@@ -1,6 +1,6 @@
 provider "aws" {
-  region = "us-east-1"
-  profile = "elastic"
+  region = "${var.region}"
+  profile = "${var.aws_profile}"
 }
 
 module "s3" {
