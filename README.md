@@ -15,6 +15,10 @@ threat intelligence of all types.
 Utilizes amazon services to allow for minimal support needs while maintaining scalability and 
 resilience and performance.  (aws lambda, elasticsearch, s3, sns)
 
+### Getting started
+
+See the [Getting started docs](docs/GettingStarted.md)
+
 #### Disclaimer.
 
 **Currently documentation for this project is lacking due to time constraints.  This is actively
