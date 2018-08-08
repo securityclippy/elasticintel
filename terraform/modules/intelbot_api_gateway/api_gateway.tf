@@ -5,10 +5,20 @@ provider "aws" {
 
 data "aws_caller_identity"  "current" {}
 
+#data "terraform_remote_state" "intelbot_lambda" {
+  #backend = "local"
+  #config {
+    #path = "../intelbot_lambda/terraform.tfstate"
+  ##}
+#}
+
 data "terraform_remote_state" "intelbot_lambda" {
-  backend = "local"
+  backend = "s3"
   config {
-    path = "../intelbot_lambda/terraform.tfstate"
+    bucket = "${var.backend_bucket}"
+    key = "dev/intelbot_lambda/terraform.tfstate"
+    region = "${var.aws_region}"
+    profile = "${var.aws_profile}"
   }
 }
 

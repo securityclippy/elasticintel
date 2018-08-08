@@ -3,10 +3,13 @@ provider "aws" {
   profile = "${var.aws_profile}"
 }
 
-data "terraform_remote_state" "ssm_parameter_store" {
-  backend = "local"
+data  "terraform_remote_state" "ssm_parameter_store" {
+  backend = "s3"
   config {
-    path = "../intelbot_ssm_parameter_store/terraform.tfstate"
+    bucket = "${var.backend_bucket}"
+    key = "dev/ssm_parameter_store/terraform.tfstate"
+    region = "${var.aws_region}"
+    profile = "${var.aws_profile}"
   }
 }
 
