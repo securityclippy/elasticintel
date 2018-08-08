@@ -183,25 +183,28 @@ class TerraformHelper(object):
         '''
         os.chdir(self.project_root)
         LOGGER.name = "IntelBot"
+
         ## setup ssm
         ssm_dir = os.path.join(self.terraform_root, "intelbot_ssm_parameter_store")
         os.chdir(ssm_dir)
         self.init_teraform(ssm_dir)
         LOGGER.info(subprocess.check_call(["terraform", "get"]))
         LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve"]))
+
         ## setup lambda
         os.chdir(self.project_root)
         lambda_dir = os.path.join(self.terraform_root, "intelbot_lambda")
-        self.init_teraform(lambda_dir)
+        LOGGER.info("cur dir: {}".format(os.listdir(".")))
         os.chdir(lambda_dir)
+        self.init_teraform(lambda_dir)
         LOGGER.info(subprocess.check_call(["terraform", "get"]))
         LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve"]))
 
         ## setup api_gateway
         os.chdir(self.project_root)
         api_gateway_dir = os.path.join(self.terraform_root, "intelbot_api_gateway")
-        self.init_teraform(api_gateway_dir)
         os.chdir(api_gateway_dir)
+        self.init_teraform(api_gateway_dir)
         LOGGER.info(subprocess.check_call(["terraform", "get"]))
         LOGGER.info(subprocess.check_call(["terraform", "apply", "-var-file={}".format(self.config_file), "-auto-approve"]))
         return
