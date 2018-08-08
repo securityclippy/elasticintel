@@ -194,7 +194,6 @@ class TerraformHelper(object):
         ## setup lambda
         os.chdir(self.project_root)
         lambda_dir = os.path.join(self.terraform_root, "intelbot_lambda")
-        LOGGER.info("cur dir: {}".format(os.listdir(".")))
         os.chdir(lambda_dir)
         self.init_teraform(lambda_dir)
         LOGGER.info(subprocess.check_call(["terraform", "get"]))
