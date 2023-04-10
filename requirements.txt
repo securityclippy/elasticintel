@@ -2,6 +2,6 @@ pytest==3.2.3
 botocore==1.7.16
 aws_requests_auth==0.4.2
 validators==0.12.2
-requests==2.19.1
+requests==2.20.0
 boto3==1.7.71
 pandas==0.23.4
