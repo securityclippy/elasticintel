@@ -1,4 +1,4 @@
 requests_aws4auth==0.9
 aws_requests_auth==0.3.3
-requests==2.9.1
+requests==2.31.0
 ipwhois==1.0.0
